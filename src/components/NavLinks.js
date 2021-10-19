@@ -2,30 +2,20 @@ import React from 'react';
 import {Router, Link} from 'react-router-dom';
 
 
-const ul= {listStyleType: "none",
-width: "100vw",
-maxWidth: "100%",
-margin: "0",
-padding: "0",
-overflow: "hidden",
-backgroundColor: "black",
-display: "flex",
-
-}
 
 const listStyle = {
     display: "block",
     color: "white",
-  textAlign: "center",
-  padding: "16px",
-  textDecoration: "none"
+    textAlign: "center",
+    padding: "16px",
+    textDecoration: "none"
 }
 
 
 export function NavLinks() {
     return (
         <nav >
-            <ul style= {ul}> 
+            <ul> 
                 <Link to= "/home" style= {listStyle}>Home</Link>
                 <br />           
                 <Link to= "/Act1" style= {listStyle}>Act1</Link>
@@ -39,9 +29,6 @@ export function NavLinks() {
                 <Link to= "/Act5" style= {listStyle}>Act5</Link>
                 <br />
                 <Link to= "/Act6" style= {listStyle}>Act6</Link>
-                
-                
-                
             </ul>
         </nav>
     )

@@ -1,1 +1,69 @@
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #eeebd0;
+}
 
+button {
+    padding: 0.5rem;
+    border-radius: 20%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px darkgray;
+    margin: 10px;
+    background: #8c55ff;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+
+h1 {
+    width: 100vw;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #56a3a6;
+    display: flex;
+}
+
+/* li {
+
+} */
+
+.chatBox {
+    border: none;
+    box-shadow: 5px 5px 5px darkgray;
+    padding: 0.5rem;
+    border-radius: 20%;
+    width: fit-content;
+}
+
+/* .chatBoxMe {
+
+}
+
+.chatBoxOther {
+
+} */
+
+input {
+    border: 2px solid #56a3a6;
+    border-radius: 10%;
+    padding: 0.5rem;
+}
+
+/* 
+lila: #8c55ff , RGB: 140, 85, 255
+beige: #eeebd0 , RGB: 238, 235, 208
+
+röd: #ce2d4f , RGB: 206, 45, 79
+orange: #ea6866 , RGB: 234, 104, 102
+grön: #56a3a6 , RGB: 86, 163, 166
+blå: #5e4ae3 , 94, 64, 227 */
