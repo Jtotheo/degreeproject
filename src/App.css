@@ -1,1 +1,35 @@
 
+button {
+    padding: 0.5rem;
+    border-radius: 20%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px darkgray;
+    margin: 10px;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+
+.chatBox {
+    border: none;
+    box-shadow: 5px 5px 5px darkgray;
+    padding: 0.5rem;
+    border-radius: 20%;
+    width: fit-content;
+}
+
+.chatBoxMe {
+
+}
+
+.chatBoxOther {
+
+}
+
+input {
+    border: 2px solid #56a3a6;
+    border-radius: 10%;
+    padding: 0.5rem;
+}
