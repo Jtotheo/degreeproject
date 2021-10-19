@@ -26,7 +26,7 @@ export function NavLinks() {
     return (
         <nav >
             <ul style= {ul}> 
-                <Link to= "/" style= {listStyle}>Home</Link>
+                <Link to= "/home" style= {listStyle}>Home</Link>
                 <br />           
                 <Link to= "/Act1" style= {listStyle}>Act1</Link>
                 <br />
@@ -35,6 +35,11 @@ export function NavLinks() {
                 <Link to= "/Act3" style= {listStyle}>Act3</Link>
                 <br />
                 <Link to= "/Act4" style= {listStyle}>Act4</Link>
+                <br />
+                <Link to= "/Act5" style= {listStyle}>Act5</Link>
+                <br />
+                <Link to= "/Act6" style= {listStyle}>Act6</Link>
+                
                 
                 
             </ul>
