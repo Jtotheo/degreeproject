@@ -9,7 +9,7 @@ export function SendMessage() {
     async function sendMessage(e){
         e.preventDefault();
         const {uid, photoURL} = auth.currentUser
-        await db.collection('messages').add({
+        await db.collection('Act2').add({
             text: msg,
             photoURL,
             uid,

@@ -2,7 +2,7 @@ import React from 'react';
 import { SignOut } from './SignOut';
 import { useState, useEffect } from 'react';
 import { db } from '../firebase';
-import { SendMessage } from './SendMessage';
+import { SendMessage } from './Send1';
 import { NavLinks } from './NavLinks';
 
 // function postMoment() {
@@ -19,7 +19,7 @@ export function Act1 (){
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
-        db.collection('messages').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
+        db.collection('Act1').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 
@@ -40,7 +40,7 @@ export function Act1 (){
                 </div> 
             </div>
             ))}
-            <SignOut />
+            
         </div>
         
 

@@ -2,14 +2,14 @@ import React from 'react';
 import { SignOut } from './SignOut';
 import { useState, useEffect } from 'react';
 import { db } from '../firebase';
-import { SendMessage } from './SendMessage';
+import { SendMessage } from './Send2';
 import { NavLinks } from './NavLinks';
 
 export function Act2 (){
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
-        db.collection('messages').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
+        db.collection('Act2').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 
@@ -30,7 +30,7 @@ export function Act2 (){
                 </div> 
             </div>
             ))}
-            <SignOut />
+            
         </div>
         
 

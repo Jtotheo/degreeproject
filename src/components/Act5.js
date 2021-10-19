@@ -2,21 +2,21 @@ import React from 'react';
 import { SignOut } from './SignOut';
 import { useState, useEffect } from 'react';
 import { db } from '../firebase';
-import { SendMessage } from './Send3';
+import { SendMessage } from './Send5';
 import { NavLinks } from './NavLinks';
 
-export function Act3 (){
+export function Act5 (){
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
-        db.collection('Act3').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
+        db.collection('Act5').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 
     return(
         <div style={{display: "flex", flexDirection:"column", alignItems: "center"}}>
             <NavLinks />
-            <h1>WELCOME TO ACT3!!!</h1>
+            <h1>WELCOME TO ACT5!!!</h1>
             <SendMessage />
             
             {messages.map(({id, text, photoURL, createdAt}) => (
