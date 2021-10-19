@@ -5,17 +5,7 @@ import { db } from '../firebase';
 import { SendMessage } from './SendMessage';
 import { NavLinks } from './NavLinks';
 
-// function postMoment() {
-
-//     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-//     const date = new Date().toLocaleDateString('sv-SE',options);
-//     const time = new Date().toLocaleTimeString();
-//     const dateAndTime = `${date} ${time}`;
-//     const formatedDateAndTime = dateAndTime.charAt(0).toUpperCase() + dateAndTime.slice(1);
-//     return formatedDateAndTime
-// }
-
-export function Act1 (){
+export function Act2 (){
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
@@ -26,7 +16,7 @@ export function Act1 (){
     return(
         <div style={{display: "flex", flexDirection:"column", alignItems: "center"}}>
             <NavLinks />
-            <h1>WELCOME TO ACT1!!!</h1>
+            <h1>WELCOME TO ACT2!!!</h1>
             <SendMessage />
             
             {messages.map(({id, text, photoURL, createdAt}) => (
@@ -46,4 +36,3 @@ export function Act1 (){
 
     )
 }
-
