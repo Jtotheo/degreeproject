@@ -26,6 +26,7 @@ function App() {
       <Route exact path="/Act5" component= {user ? Act5 : ""} />
       <Route exact path="/Act6" component= {user ? Act6 : ""} />
       <Route exact path="/home" component= {LandingPage} />
+      <Route exact path="/" component= {LandingPage} />
       <div className="content">
         
         {user ? 
