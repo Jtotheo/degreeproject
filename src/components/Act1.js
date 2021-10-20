@@ -13,6 +13,8 @@ export function Act1 (){
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 
+    
+
     return(
         <div style={{display: "flex", flexDirection:"column", alignItems: "center"}}>
             <NavLinks />
@@ -36,4 +38,6 @@ export function Act1 (){
 
     )
 }
+
+{/* <p style = {{position:"relative", bottom:"20px"}}>{new Date(createdAt.toDate()).toString().slice(0,24)}</p> */}
 
