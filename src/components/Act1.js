@@ -5,16 +5,6 @@ import { db } from '../firebase';
 import { SendMessage } from './Send1';
 import { NavLinks } from './NavLinks';
 
-// function postMoment() {
-
-//     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-//     const date = new Date().toLocaleDateString('sv-SE',options);
-//     const time = new Date().toLocaleTimeString();
-//     const dateAndTime = `${date} ${time}`;
-//     const formatedDateAndTime = dateAndTime.charAt(0).toUpperCase() + dateAndTime.slice(1);
-//     return formatedDateAndTime
-// }
-
 export function Act1 (){
     const [messages, setMessages] = useState([]);
 
@@ -29,13 +19,13 @@ export function Act1 (){
             <h1>WELCOME TO ACT1!!!</h1>
             <SendMessage />
             
-            {messages.map(({id, text, photoURL, createdAt}) => (
+            {messages.map(({id, text, photoURL, date}) => (
                 
              <div> 
                 <div style={{border: "2px black solid", borderRadius:"5px", width:"400px", margin: "20px", padding: "20px"}} key = {id}>
                         <img style= {{height: "60px",float:"right", borderRadius:"50%",}} src={photoURL} alt="" />
                         
-                        <p style = {{position:"relative", bottom:"20px"}}>{new Date(createdAt.toDate()).toString().slice(0,24)}</p>
+                        <p style = {{position:"relative", bottom:"20px"}}>{date}</p>
                         <p>{text}</p>
                 </div> 
             </div>

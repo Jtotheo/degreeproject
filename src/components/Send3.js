@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import { db, auth } from '../firebase'
 import firebase from 'firebase'
 
+function postMoment() {
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const date = new Date().toLocaleDateString('sv-SE',options);
+    const time = new Date().toLocaleTimeString();
+    const dateAndTime = `${date} ${time}`;
+    const formatedDateAndTime = dateAndTime.charAt(0).toUpperCase() + dateAndTime.slice(1);
+    return formatedDateAndTime
+}
+
 export function SendMessage() {
 
     const [msg, setMsg] = useState("");
@@ -13,7 +23,8 @@ export function SendMessage() {
             text: msg,
             photoURL,
             uid,
-            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+            createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+            date: postMoment()
         })
         setMsg('');
     }
