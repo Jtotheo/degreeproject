@@ -12,7 +12,7 @@ function postMoment() {
     return formatedDateAndTime
 }
 
-export function SendMessage() {
+export function SendMessage({scroll}) {
 
     const [msg, setMsg] = useState("");
 
@@ -27,6 +27,7 @@ export function SendMessage() {
             date: postMoment()
         })
         setMsg('');
+        scroll.current.scrollIntoView({behavior: 'smooth'});
     }
 
     return (

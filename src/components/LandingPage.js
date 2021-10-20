@@ -5,8 +5,7 @@ import { NavLinksMLMO } from "./NavLinksMLMO";
 import { NavLinksGTBG } from "./NavLinksGTBG";
 import { SignOut } from "./SignOut";
 // import { SignIn } from "./SignIn";
-import logo from './logo.png'
-import { Dropdown } from "./Dropdown";
+
 import { useState, useEffect } from "react";
 
 function checkCity(test) {
@@ -19,6 +18,10 @@ function checkCity(test) {
     else return <NavLinksSTHLM />
 }
 
+// import { SignOut } from "./SignOut";
+// import { SignIn } from "./SignIn";
+import logograd from './logograd.png';
+import Example from './Carousel';
 
 
 export function LandingPage() {
@@ -28,7 +31,9 @@ export function LandingPage() {
     console.log(city)
     return (
         <>
-            <img src={logo} alt="Logo" width="200" display="flex"/>
+        <div className="logodiv">
+            <img src={logograd} alt="Logo" width="100" />
+            </div>
             {/* <h1>This is the amig@s homepage!</h1> */}
             <SignOut />
            
@@ -51,6 +56,10 @@ export function LandingPage() {
             {checkCity(city)}
             
            
+            {/* <SignOut /> */}
+            <NavLinks />
+
+            <Example />
            
         </>
     )

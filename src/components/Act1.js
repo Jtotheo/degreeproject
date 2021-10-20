@@ -1,11 +1,12 @@
 import React from 'react';
-import { SignOut } from './SignOut';
-import { useState, useEffect } from 'react';
-import { db } from '../firebase';
+// import { SignOut } from './SignOut';
+import { useState, useEffect, useRef } from 'react';
+import { db, auth } from '../firebase';
 import { SendMessage } from './Send1';
 import { NavLinks } from './NavLinks';
 
 export function Act1 (){
+    const scroll = useRef();
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
@@ -13,31 +14,30 @@ export function Act1 (){
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 
-    
-
     return(
-        <div style={{display: "flex", flexDirection:"column", alignItems: "center"}}>
+        <div className="msgcontainer">
             <NavLinks />
             <h1>WELCOME TO ACT1!!!</h1>
-            <SendMessage />
-            
-            {messages.map(({id, text, photoURL, date}) => (
-                
-             <div> 
-                <div style={{border: "2px black solid", borderRadius:"5px", width:"400px", margin: "20px", padding: "20px"}} key = {id}>
-                        <img style= {{height: "60px",float:"right", borderRadius:"50%",}} src={photoURL} alt="" />
-                        
-                        <p style = {{position:"relative", bottom:"20px"}}>{date}</p>
-                        <p>{text}</p>
-                </div> 
+            <div className="msgs">
+                {messages.map(({id, text, photoURL, date, uid}) => (
+                    
+                <div> 
+                    <div key= {id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
+                            <img style= {{height: "60px",float:"right", borderRadius:"50%",}} src={photoURL} alt="" />
+                            
+                            <p style = {{position:"relative", bottom:"20px"}}>{date}</p>
+                            <p>{text}</p>
+                    </div> 
+                </div>
+                ))}
             </div>
-            ))}
-            
+            <SendMessage scroll={scroll} />
+            <div ref={scroll}></div>
         </div>
         
 
     )
 }
 
-{/* <p style = {{position:"relative", bottom:"20px"}}>{new Date(createdAt.toDate()).toString().slice(0,24)}</p> */}
+// <p style = {{position:"relative", bottom:"20px"}}>{new Date(createdAt.toDate()).toString().slice(0,24)}</p> 
 
