@@ -39,6 +39,13 @@ export function LandingPage() {
             {/* <h1>This is the amig@s homepage!</h1> */}
             <SignOut />
            
+            
+           
+            {/* <SignOut /> */}
+           
+
+            <Example />
+
             <div className= "dropdown">
                 <select name="cities" id="citySelect"
                 onChange= {(e) => {
@@ -56,12 +63,8 @@ export function LandingPage() {
           
 
             {checkCity(city)}
-            
-           
-            {/* <SignOut /> */}
-            
-               
-            <Example />
+
+            <NavLinks />
            
         </>
     )
