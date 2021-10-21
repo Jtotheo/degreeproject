@@ -1,5 +1,11 @@
 import React from 'react';
 import {Router, Link} from 'react-router-dom';
+// import {THGtbg } from './components/THGtbg';
+// import {NFGtbg } from './components/NFGtbg';
+// import {MDGtbg } from './components/MDGtbg';
+// import {BFGtbg } from './components/BFGtbg';
+// import {KNGtbg } from './components/KNGtbg';
+// import {OVRIGTGtbg } from './components/OVRIGTGtbg';
 
 
 
