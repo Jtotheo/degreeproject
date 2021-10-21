@@ -21,7 +21,7 @@ function Example(props)
 
     return (
         <Carousel
-        autoPlay={true}
+        autoPlay={false}
         navButtonsAlwaysInvisible={true}
         fullHeightHover={false}
         swipe={true}     // We want the nav buttons wrapper to only be as big as the button element is
@@ -49,12 +49,20 @@ function Example(props)
 function Item(props)
 {
     return (
-        <Paper>
+
+        <div className="paperstyle" >
+        <Paper
+        elevation={100}
+        style={{borderRadius: "50%", backgroundColor:"rgba(255,255,255,0)"}}
+
+        
+        >
             <h2>{props.item.name}</h2>
             <img src={climbing} alt="Logo" width="100%" />
             <p>{props.item.description}</p>
             
         </Paper>
+        </div>
     )
 }
 

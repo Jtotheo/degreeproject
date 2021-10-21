@@ -30,11 +30,44 @@ button:hover {
 h1 {
     width: 100vw;
     text-align: center;
+    font-weight: 600;
 }
 
 h2 {
     text-align: center;
+    font-weight: 600;
+    padding-top: 3%;
+    font-size: 16px;
+    margin: 2%;
 }
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3%;
+    margin: 2%;
+
+}
+
+.paperstyle {
+padding: 5%;
+box-sizing: border-box;
+
+}
+/* .MuiPaper-root{
+
+background-color: rgb(201, 0, 0);
+
+} */
+
+/* .MuiPaper-elevation1 {
+
+}
+
+.MuiPaper-rounded {
+
+} */
 
 nav {
     position: sticky;
