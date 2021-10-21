@@ -1,9 +1,10 @@
 import React from "react";
 import  {NavLinks} from './NavLinks';
-import {NavLinksSTHLM} from './NavLinksSTHLM'
-import { NavLinksMLMO } from "./NavLinksMLMO";
-import { NavLinksGTBG } from "./NavLinksGTBG";
+import {NavLinksIconsSTHLM} from './NavLinksIconsSTHLM'
+import { NavLinksIconsMLMO } from "./NavLinksIconsMLMO";
+import { NavLinksIconsGTBG } from "./NavLinksIconsGTBG";
 import { SignOut } from "./SignOut";
+import {NavLinksIcons} from './NavLinksIcons'
 // import { SignIn } from "./SignIn";
 import logograd from './logograd.png';
 import Example from './Carousel';
@@ -12,12 +13,12 @@ import { useState, useEffect } from "react";
 
 function checkCity(test) {
     if (test === "goteborg") {
-        return <NavLinksGTBG />
+        return <NavLinksIconsGTBG />
     } 
     else if (test === "malmo") {
-        return <NavLinksMLMO />
+        return <NavLinksIconsMLMO />
     }
-    else return <NavLinksSTHLM />
+    else return <NavLinksIconsSTHLM />
 }
 
 // import { SignOut } from "./SignOut";
@@ -58,8 +59,8 @@ export function LandingPage() {
             
            
             {/* <SignOut /> */}
-            <NavLinks />
-
+            
+               
             <Example />
            
         </>

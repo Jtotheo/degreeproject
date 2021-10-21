@@ -1,7 +1,7 @@
 import { useAuthState} from 'react-firebase-hooks/auth';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import { Act1 } from './components/Act1';
+import {AktivitetSthlm } from './components/AktivitetSthlm';
 import { Act2 } from './components/Act2';
 import { Act3 } from './components/Act3';
 import { Act4 } from './components/Act4';
@@ -20,7 +20,7 @@ function App() {
    
    <Router>
       
-      <Route exact path="/Act1" component= {user ? Act1 : ""} />
+      <Route exact path="/Act1" component= {user ? Act2 : ""} />
       <Route exact path="/Act2" component= {user ? Act2 : ""} />
       <Route exact path="/Act3" component= {user ? Act3 : ""} />
       <Route exact path="/Act4" component= {user ? Act4 : ""} />
@@ -28,7 +28,18 @@ function App() {
       <Route exact path="/Act6" component= {user ? Act6 : ""} />
       <Route exact path="/home" component= {LandingPage} />
       <Route exact path="/categories" component= {CategoryGrid} />
+      <Route exact path="/categories/sthlm" component= {CategoryGrid} />
+      <Route exact path="/categories/sthlm/akt" component= {AktivitetSthlm} />
       <Route exact path="/" component= {LandingPage} />
+
+
+
+      <Route exact path="/categories/gbg" component= {CategoryGrid} />
+
+      <Route exact path="/categories/mlmo" component= {CategoryGrid} />
+
+
+
       <div className="content">
         
         {user ? 

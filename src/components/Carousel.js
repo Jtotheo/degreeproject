@@ -20,13 +20,14 @@ function Example(props)
     ]
 
     return (
-        <Carousel
+        <Carousel 
         autoPlay={true}
         navButtonsAlwaysInvisible={true}
         fullHeightHover={false}
         swipe={true}     // We want the nav buttons wrapper to only be as big as the button element is
         navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
         style: {
+            
             background:0,
             borderRadius: 100
         }
@@ -49,7 +50,7 @@ function Example(props)
 function Item(props)
 {
     return (
-        <Paper>
+        <Paper style= {{maxWidth: "500px"}}>
             <h2>{props.item.name}</h2>
             <img src={climbing} alt="Logo" width="100%" />
             <p>{props.item.description}</p>

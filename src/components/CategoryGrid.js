@@ -1,6 +1,7 @@
 import React from 'react';
 import {Router, Link} from 'react-router-dom';
 import { NavLinks } from './NavLinks';
+import { AktivitetSthlm } from './AktivitetSthlm'
 
 
 
@@ -19,7 +20,8 @@ export function CategoryGrid() {
         <div>
             <NavLinks />
             <div className="category-cards">
-                <p className="category-card">Träning och hälsa</p>
+            <Link to= "/categories/sthlm/akt" className="category-card" style= {listStyle}>Träning och hälsa</Link>
+            <br />
                 <p className="category-card">Natur och friluftsliv</p>
                 <p className="category-card">Mat och dryck</p>
                 <p className="category-card">Barn och familj</p>

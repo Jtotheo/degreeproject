@@ -5,19 +5,19 @@ import { db, auth } from '../firebase';
 import { SendMessage } from './Send1';
 import { NavLinks } from './NavLinks';
 
-export function Act1 (){
+export function AktivitetSthlm (){
     const scroll = useRef();
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
-        db.collection('Act1').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
+        db.collection('AktivitetSthlm').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 
     return(
         <div className="msgcontainer">
             <NavLinks />
-            <h1>WELCOME TO ACT1!!!</h1>
+            <h1>Välkommen till Stockholms chat för träning och hälsa</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     
