@@ -5,6 +5,8 @@ import { NavLinksMLMO } from "./NavLinksMLMO";
 import { NavLinksGTBG } from "./NavLinksGTBG";
 import { SignOut } from "./SignOut";
 // import { SignIn } from "./SignIn";
+import logograd from './logograd.png';
+import Example from './Carousel';
 
 import { useState, useEffect } from "react";
 
@@ -20,8 +22,7 @@ function checkCity(test) {
 
 // import { SignOut } from "./SignOut";
 // import { SignIn } from "./SignIn";
-import logograd from './logograd.png';
-import Example from './Carousel';
+
 
 
 export function LandingPage() {

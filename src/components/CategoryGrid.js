@@ -15,7 +15,22 @@ const listStyle = {
 
 export function CategoryGrid() {
     return (
-      <NavLinks />
+
+        <div>
+            <NavLinks />
+            <div className="category-cards">
+                <p className="category-card">Träning och hälsa</p>
+                <p className="category-card">Natur och friluftsliv</p>
+                <p className="category-card">Mat och dryck</p>
+                <p className="category-card">Barn och familj</p>
+                <p className="category-card">Kultur och nöje</p>
+                <p className="category-card">Övrigt</p>
+            </div>
+        </div>
+      
+    
+
+      
 
       // <div>Natur och Friluftsliv</div>
 
