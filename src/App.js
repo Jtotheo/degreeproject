@@ -30,6 +30,7 @@ import { Act6 } from './components/Act6';
 import SignIn from './components/SignIn';
 import { auth } from './firebase.js'
 import { LandingPage } from './components/LandingPage'
+import { Settings } from './components/Settings'
 import { CategoryGridSTHLM } from './components/CategoryGridSTHLM'
 import { CategoryGridGTBG } from './components/CategoryGridGTBG'
 import { CategoryGridMLMO } from './components/CategoryGridMLMO'
@@ -51,6 +52,7 @@ function App() {
 
       <Route exact path="/home" component= {LandingPage} />
       <Route exact path="/" component= {LandingPage} />
+      <Route exact path="/settings" component= {Settings} />
 
    
       

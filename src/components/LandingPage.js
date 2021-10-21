@@ -3,7 +3,7 @@ import  {NavLinks} from './NavLinks';
 import {NavLinksIconsSTHLM} from './NavLinksIconsSTHLM'
 import { NavLinksIconsMLMO } from "./NavLinksIconsMLMO";
 import { NavLinksIconsGTBG } from "./NavLinksIconsGTBG";
-import { SignOut } from "./SignOut";
+
 import {NavLinksIcons} from './NavLinksIcons'
 // import { SignIn } from "./SignIn";
 import logograd from './logograd.png';
@@ -34,10 +34,10 @@ export function LandingPage() {
     return (
         <>
         <div className="logodiv">
-            <img src={logograd} alt="Logo" width="100" />
+            <img src={logograd} alt="Logo" width="125" />
             </div>
             {/* <h1>This is the amig@s homepage!</h1> */}
-            <SignOut />
+           
            
             
            
@@ -47,6 +47,7 @@ export function LandingPage() {
             <Example />
 
             <div className= "dropdown">
+            <p>Vilken stad vill du se aktiviteter för?</p>
                 <select name="cities" id="citySelect"
                 onChange= {(e) => {
                     const selectedCity = e.target.value;

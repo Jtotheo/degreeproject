@@ -14,8 +14,9 @@ import React, { Component } from 'react'
 export function Dropdown() {
 
     return (
-
+      <div className="dropdownwrapper">
       <div className= "dropdown">
+        
         <select name="cities" id="citySelect">
         <option disabled selected value> Välj en stad! </option>
           <option value="stockholm">Stockholm</option>
@@ -23,7 +24,7 @@ export function Dropdown() {
           <option value="goteborg">Göteborg</option>
         </select>
       </div>
-
+      </div>
 
     )
 

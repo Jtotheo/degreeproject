@@ -7,7 +7,7 @@ body {
 .logodiv {
     display: flex;
     justify-content: center;
-    margin-top: 8%;
+    margin-top: 11%;
 }
 
 button {
@@ -37,41 +37,32 @@ h2 {
     text-align: center;
     font-weight: 600;
     padding-top: 3%;
-    font-size: 16px;
+    font-size: 20px;
     margin: 2%;
+    color: rgb(103, 110, 116);
+    z-index: 2;
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
     padding-bottom: 3%;
     margin: 2%;
+    color: rgb(103, 110, 116);
 
 }
 
 .paperstyle {
-padding: 5%;
+padding: 0%;
 box-sizing: border-box;
-
+margin-top: 8%;
 }
-/* .MuiPaper-root{
-
-background-color: rgb(201, 0, 0);
-
-} */
-
-/* .MuiPaper-elevation1 {
-
-}
-
-.MuiPaper-rounded {
-
-} */
 
 nav {
     position: sticky;
     bottom: 0;
+    background-color: #F4EEFF;
 }
 ul {
     list-style: none;
@@ -82,7 +73,7 @@ ul {
     position: fixed;
     bottom: 0;
     z-index: 100;
-    background-color: #f2ebff;
+    background-color: #F4EEFF;
     border-top:1px solid#8c55ff;
     display: flex;
     
@@ -155,6 +146,74 @@ input {
     margin: 20px;
     width: 150px;
     height: 150px;
+}
+
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10%;
+}
+
+select {
+    border-radius: 7%;
+    border-style: none;
+    /*-sox-shadow: 2px 2px 2px darkgray; */
+    font-family: 'Jost', sans-serif;
+    background-color: #f3effa;
+    font-size: 18px;
+}
+
+/* .select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.select-hide {
+    display: none;
+  } */
+
+
+.settingswrapper {
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
 
