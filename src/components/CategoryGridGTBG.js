@@ -1,7 +1,12 @@
 import React from 'react';
 import {Router, Link} from 'react-router-dom';
 import { NavLinks } from './NavLinks';
-import { AktivitetSthlm } from './AktivitetSthlm'
+import {THGtbg } from './THGtbg';
+import {NFGtbg } from './NFGtbg';
+import {MDGtbg } from './MDGtbg';
+import {BFGtbg } from './BFGtbg';
+import {KNGtbg } from './KNGtbg';
+import {OvrigtGtbg } from './OvrigtGtbg';
 
 
 
@@ -14,21 +19,26 @@ const listStyle = {
 }
 
 
-export function CategoryGrid() {
+export function CategoryGridGTBG() {
     return (
 
         <div>
-            <NavLinks />
-            <div className="category-cards">
-            <Link to= "/categories/sthlm/akt" className="category-card" style= {listStyle}>Träning och hälsa</Link>
-            <br />
-                <p className="category-card">Natur och friluftsliv</p>
-                <p className="category-card">Mat och dryck</p>
-                <p className="category-card">Barn och familj</p>
-                <p className="category-card">Kultur och nöje</p>
-                <p className="category-card">Övrigt</p>
-            </div>
+        <NavLinks />
+        <div className="category-cards">
+        <Link to= "/categories/gbg/akt" className="category-card" style= {listStyle}>Träning och hälsa</Link>
+        <br />
+        <Link to= "/categories/gbg/akt1" className="category-card" style= {listStyle}>Natur och friluftsliv</Link>
+        <br />
+        <Link to= "/categories/gbg/akt2" className="category-card" style= {listStyle}>Mat och dryck</Link>
+        <br />
+        <Link to= "/categories/gbg/akt3" className="category-card" style= {listStyle}>Barn och familj</Link>
+        <br />
+        <Link to= "/categories/gbg/akt4" className="category-card" style= {listStyle}>Kultur och nöje</Link>
+        <br />
+        <Link to= "/categories/gbg/akt5" className="category-card" style= {listStyle}>Övrigt</Link>
+        <br />
         </div>
+    </div>
       
     
 

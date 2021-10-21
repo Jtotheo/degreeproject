@@ -19,7 +19,7 @@ export function SendMessage({scroll}) {
     async function sendMessage(e){
         e.preventDefault();
         const {uid, photoURL} = auth.currentUser
-        await db.collection('Act6').add({
+        await db.collection('Aktivitet3Mlmo').add({
             text: msg,
             photoURL,
             uid,
