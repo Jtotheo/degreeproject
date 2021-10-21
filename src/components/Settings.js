@@ -1,6 +1,6 @@
 import React from "react";
 import { SignOut } from "./SignOut";
-import { NavLinks } from "./NavLinks";
+import { NavLinksIconsSTHLM } from './NavLinksIconsSTHLM';
 
 export function Settings () {
     return (
@@ -9,7 +9,7 @@ export function Settings () {
             <SignOut />
         </div>
         
-        <NavLinks />
+        <NavLinksIconsSTHLM />
         </>
     )
 }

@@ -31,10 +31,10 @@ export function SendMessage({scroll}) {
     }
 
     return (
-        <div>
+        <div className ="sendwrapper">
             <form onSubmit = {sendMessage}>
                 <input value={msg} onChange={(e)=> setMsg(e.target.value)} placeholder="Message here.." type="text" />
-                <button type= "submit">Send</button>
+                <button className="send"  type= "submit">Send</button>
             </form>
         </div>
     )

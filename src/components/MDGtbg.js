@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
 import { SendMessage } from './Send3GTBG';
-import { NavLinks } from './NavLinks';
+import { NavLinksIconsGTBG } from './NavLinksIconsGTBG';
 
 export function MDGtbg (){
     const scroll = useRef();
@@ -16,7 +16,7 @@ export function MDGtbg (){
 
     return(
         <div className="msgcontainer">
-            <NavLinks />
+            <NavLinksIconsGTBG />
             <h1>Välkommen till Göteborgs chat för mat och dryck!</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (

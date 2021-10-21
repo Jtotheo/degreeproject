@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
 import { SendMessage } from './Send1MLMO';
-import { NavLinks } from './NavLinks';
+import { NavLinksIconsMLMO } from './NavLinksIconsMLMO';
 
 export function THMlmo (){
     const scroll = useRef();
@@ -16,7 +16,7 @@ export function THMlmo (){
 
     return(
         <div className="msgcontainer">
-            <NavLinks />
+            <NavLinksIconsMLMO />
             <h1>Välkommen till Malmös chat för träning och hälsa!</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (

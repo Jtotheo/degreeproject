@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
 import { SendMessage } from './Send5GTBG';
-import { NavLinks } from './NavLinks';
+import { NavLinksIconsGTBG } from './NavLinksIconsGTBG';
 
 export function KNGtbg (){
     const scroll = useRef();
@@ -16,7 +16,7 @@ export function KNGtbg (){
 
     return(
         <div className="msgcontainer">
-            <NavLinks />
+            <NavLinksIconsGTBG />
             <h1>Välkommen till Göteborgs chat för kultur och nöje!</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (

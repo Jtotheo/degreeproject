@@ -1,10 +1,7 @@
 import React from "react";
-import  {NavLinks} from './NavLinks';
 import {NavLinksIconsSTHLM} from './NavLinksIconsSTHLM'
 import { NavLinksIconsMLMO } from "./NavLinksIconsMLMO";
 import { NavLinksIconsGTBG } from "./NavLinksIconsGTBG";
-
-import {NavLinksIcons} from './NavLinksIcons'
 // import { SignIn } from "./SignIn";
 import logograd from './logograd.png';
 import Example from './Carousel';
@@ -21,29 +18,22 @@ function checkCity(test) {
     else return <NavLinksIconsSTHLM />
 }
 
-// import { SignOut } from "./SignOut";
-// import { SignIn } from "./SignIn";
-
-
 
 export function LandingPage() {
     const [city, setCity] = useState("")
    
 
     console.log(city)
+
+    //Kolla upp SignIn!
     return (
         <>
         <div className="logodiv">
             <img src={logograd} alt="Logo" width="125" />
             </div>
             {/* <h1>This is the amig@s homepage!</h1> */}
+            {/* <SignOut /> */} 
            
-           
-            
-           
-            {/* <SignOut /> */}
-           
-
             <Example />
 
             <div className= "dropdown">
@@ -61,12 +51,8 @@ export function LandingPage() {
                 </select>
             </div>
             
-          
-
             {checkCity(city)}
 
-            
-           
         </>
     )
 

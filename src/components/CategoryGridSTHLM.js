@@ -1,12 +1,6 @@
 import React from 'react';
 import {Router, Link} from 'react-router-dom';
 import { NavLinksIconsSTHLM } from './NavLinksIconsSTHLM';
-import {THSthlm } from './THSthlm';
-import {NFSthlm } from './NFSthlm';
-import {MDSthlm } from './MDSthlm';
-import {BFSthlm } from './BFSthlm';
-import {KNSthlm } from './KNSthlm';
-import {OvrigtSthlm } from './OvrigtSthlm';
 
 
 
@@ -38,32 +32,9 @@ export function CategoryGridSTHLM() {
             <Link to= "/categories/sthlm/akt5" className="category-card" style= {listStyle}>Övrigt</Link>
             <br />
             </div>
+
+            <NavLinksIconsSTHLM />
         </div>
-      
-    
-
-      
-
-      // <div>Natur och Friluftsliv</div>
-
-        // <nav >
-        //     <ul> 
-            
-        //         <br />           
-        //         <Link to= "/Act1" style= {listStyle}>Act1</Link>
-        //         <br />
-        //         <Link to= "/Act2" style= {listStyle}>Act2</Link>
-        //         <br />
-        //         <Link to= "/Act3" style= {listStyle}>Act3</Link>
-        //         <br />
-        //         <Link to= "/Act4" style= {listStyle}>Act4</Link>
-        //         <br />
-        //         <Link to= "/Act5" style= {listStyle}>Act5</Link>
-        //         <br />
-        //         <Link to= "/Act6" style= {listStyle}>Act6</Link>
-        //     </ul>
-        // </nav>
-        // <div>hej</div>
       
     )
 }

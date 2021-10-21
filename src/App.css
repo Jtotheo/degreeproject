@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #f3effa;
+    background-color: #F5F3E3;
     font-size: 12px;
 }
 
@@ -20,7 +25,14 @@ button {
     background: #8c55ff;
     font-family: 'Jost', sans-serif;
     color: white;
-    /* font-size: 10px; */
+}
+
+.sendwrapper {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 4rem;
+    width: 100%;
+    text-align: center;
 }
 
 button:hover {
@@ -50,20 +62,24 @@ p {
     padding-bottom: 3%;
     margin: 2%;
     color: rgb(103, 110, 116);
-
 }
 
 .paperstyle {
-padding: 0%;
-box-sizing: border-box;
-margin-top: 8%;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    margin-top: 8%;
 }
 
-nav {
+img {
+    border-radius: 7px;
+}
+
+/* nav {
     position: sticky;
     bottom: 0;
-    background-color: #F4EEFF;
-}
+    
+} */
+
 ul {
     list-style: none;
     width: 100%;
@@ -73,19 +89,13 @@ ul {
     position: fixed;
     bottom: 0;
     z-index: 100;
-    background-color: #F4EEFF;
-    border-top:1px solid#8c55ff;
+    background-color: #F5F3E3;
+    border-top:1px solid #8c55ff;
     display: flex;
-    
+    justify-content: space-around;
+    width: 100vw;
 }
 
-/* .chatBox {
-    border: none;
-    box-shadow: 5px 5px 5px darkgray;
-    padding: 0.5rem;
-    border-radius: 20%;
-    width: fit-content;
-} */
 .msgcontainer {
     margin-bottom: 5rem;
     /* max-width: 50%; */
@@ -130,24 +140,33 @@ ul {
 }
 
 input {
-    /* border: 2px solid #56a3a6; */
     border-radius: 7%;
     border-style: none;
     padding: 0.8rem;
     width: 50%;
-    margin-left: 2rem;
-    /* position: sticky;
+    /* margin-left: 2rem;
+    margin-bottom: 4rem;
+    position: fixed;
     bottom: 0; */
 }
 
-.category-card {
-    background: green;
-    padding: 10px;
-    margin: 20px;
-    width: 150px;
-    height: 150px;
+.category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
 }
 
+.category-card {
+    background: #ea6866;
+    padding: 10px;
+    margin: 20px;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7px;
+}
 
 .dropdown {
     display: flex;
@@ -160,9 +179,9 @@ input {
 select {
     border-radius: 7%;
     border-style: none;
-    /*-sox-shadow: 2px 2px 2px darkgray; */
+    /*-box-shadow: 2px 2px 2px darkgray; */
     font-family: 'Jost', sans-serif;
-    background-color: #f3effa;
+    background-color: #F5F3E3;
     font-size: 18px;
 }
 
@@ -175,41 +194,9 @@ select {
 }
 .select-hide {
     display: none;
-  } */
-
+} */
 
 .settingswrapper {
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
-    display: flex;
     display: flex;
     justify-content: center;
     align-items: center;

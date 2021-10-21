@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
 import { SendMessage } from './Send1STHLM';
-import { NavLinks } from './NavLinks';
+import { NavLinksIconsSTHLM } from './NavLinksIconsSTHLM';
 
 export function NFSthlm (){
     const scroll = useRef();
@@ -16,7 +16,7 @@ export function NFSthlm (){
 
     return(
         <div className="msgcontainer">
-            <NavLinks />
+            <NavLinksIconsSTHLM />
             <h1>Välkommen till Stockholms chat för natur och friluftsliv!</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
