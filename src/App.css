@@ -116,6 +116,14 @@ input {
     bottom: 0; */
 }
 
+.category-card {
+    background: green;
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+}
+
 
 /* 
 lila: #8c55ff , RGB: 140, 85, 255
