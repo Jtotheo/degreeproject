@@ -64,7 +64,7 @@ export function LandingPage() {
 
             {checkCity(city)}
 
-            <NavLinks />
+            
            
         </>
     )

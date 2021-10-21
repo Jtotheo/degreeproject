@@ -2,7 +2,7 @@ import React from 'react';
 // import { SignOut } from './SignOut';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
-import { SendMessage } from './Send2';
+import { SendMessage } from './Send2STHLM';
 import { NavLinks } from './NavLinks';
 
 export function Act2 (){

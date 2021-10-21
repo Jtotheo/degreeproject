@@ -2,22 +2,22 @@ import React from 'react';
 // import { SignOut } from './SignOut';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
-import { SendMessage } from './Send5STHLM';
+import { SendMessage } from './Send3MLMO';
 import { NavLinks } from './NavLinks';
 
-export function Act5 (){
+export function MDMlmo (){
     const scroll = useRef();
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
-        db.collection('Act5').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
+        db.collection('Aktivitet2Mlmo').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 
     return(
         <div className="msgcontainer">
             <NavLinks />
-            <h1>WELCOME TO ACT5!!!</h1>
+            <h1>Välkommen till Malmös chat för mat och dryck!</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     
