@@ -11,6 +11,7 @@ import SignIn from './components/SignIn';
 import { auth } from './firebase.js'
 import { LandingPage } from './components/LandingPage'
 import { CategoryGrid } from './components/CategoryGrid'
+import { Settings } from './components/Settings'
 
 function App() {
   const [user]=useAuthState(auth);
@@ -31,6 +32,7 @@ function App() {
       <Route exact path="/categories/sthlm" component= {CategoryGrid} />
       <Route exact path="/categories/sthlm/akt" component= {AktivitetSthlm} />
       <Route exact path="/" component= {LandingPage} />
+      <Route exact path="/settings" component= {Settings} />
 
 
 
