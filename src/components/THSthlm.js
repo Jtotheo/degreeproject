@@ -17,15 +17,16 @@ export function THSthlm (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsSTHLM />
-            <h1>Välkommen till Stockholms chat för träning och hälsa!</h1>
+            <h1 className="subject">Stockholm | träning och hälsa</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     
                 <div> 
+                    <p className="date">{date}</p>
                     <div key= {id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
                             <img style= {{height: "60px",float:"right", borderRadius:"50%",}} src={photoURL} alt="" />
                             
-                            <p style = {{position:"relative", bottom:"20px"}}>{date}</p>
+                            
                             <p>{text}</p>
                     </div> 
                 </div>
@@ -39,5 +40,5 @@ export function THSthlm (){
     )
 }
 
-// <p style = {{position:"relative", bottom:"20px"}}>{new Date(createdAt.toDate()).toString().slice(0,24)}</p> 
+
 

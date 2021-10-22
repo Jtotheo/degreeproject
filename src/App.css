@@ -1,4 +1,4 @@
-*
+*,
 *:before,
 *:after {
     margin: 0;
@@ -6,9 +6,10 @@
     box-sizing: border-box;
     
 }
+
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #F5F3E3;
+    background-color: #BEB7F4;
     font-size: 12px;
 }
 
@@ -113,14 +114,14 @@ img {
 
 ul {
     list-style: none;
-    width: 100%;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     z-index: 100;
-    background-color: #F5F3E3;
+    background-color: #BEB7F4;
     border-top:1px solid #8c55ff;
     display: flex;
     justify-content: space-around;
@@ -146,11 +147,14 @@ ul {
 .msg {
     display: flex;
     padding: 20px 10px 0 20px;
-    margin: 20px;
+    margin: 0px 20px;
     border-radius: 3000px;
     box-shadow: 5px 5px 5px darkgray;
     align-items: center;
     min-height: fit-content;
+    min-width: 60%;
+    max-width: 80%;
+    
 }
 .sent {
     background-color: #ea6866;
@@ -163,15 +167,35 @@ ul {
 }
 .received {
     color: white;
-    background-color: #5e4ae3;
+    background-color: #eeebd0;
     border-top-left-radius: 1000px;
     padding: 1rem;
     float: left;
-    text-align: right;
+    text-align: left;
+}
+
+.sent p {
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.received p {
+    padding-left: 0.5rem;
+    color: black;
+}
+
+.date {
+    position: relative;
+    top: 5px;
+    font-size: 9px;
+    text-align: center;
+    width: 100%;
+    margin: 6% 0% 3% 0%;
 }
 
 input {
-    border-radius: 7%;
+    border-radius: 7px;
     border-style: none;
     padding: 0.8rem;
     width: 50%;
@@ -193,9 +217,9 @@ input {
 .category-card {
     background: #ea6866;
     padding: 15px;
-    margin: 20px;
-    width: 9rem;
-    height: 9rem;
+    margin: 10px;
+    width: 7rem;
+    height: 7rem;
     border-radius: 7px;
     opacity: 0.8;
 }

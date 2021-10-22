@@ -17,15 +17,16 @@ export function KNGtbg (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsGTBG />
-            <h1>Välkommen till Göteborgs chat för kultur och nöje!</h1>
+            <h1 className="subject">Göteborg | kultur & nöje</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     
                 <div> 
+                    <p className="date">{date}</p>
                     <div key= {id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
                             <img style= {{height: "60px",float:"right", borderRadius:"50%",}} src={photoURL} alt="" />
                             
-                            <p style = {{position:"relative", bottom:"20px"}}>{date}</p>
+                            
                             <p>{text}</p>
                     </div> 
                 </div>
@@ -39,5 +40,5 @@ export function KNGtbg (){
     )
 }
 
-// <p style = {{position:"relative", bottom:"20px"}}>{new Date(createdAt.toDate()).toString().slice(0,24)}</p> 
+
 

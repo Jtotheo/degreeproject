@@ -17,15 +17,16 @@ export function NFMlmo (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsMLMO />
-            <h1>Välkommen till Malmös chat för natur och friluftsliv!</h1>
+            <h1 className="subject">Malmö | natur och friluftsliv</h1>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     
                 <div> 
+                    <p className="date">{date}</p>
                     <div key= {id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
                             <img style= {{height: "60px",float:"right", borderRadius:"50%",}} src={photoURL} alt="" />
                             
-                            <p style = {{position:"relative", bottom:"20px"}}>{date}</p>
+                            
                             <p>{text}</p>
                     </div> 
                 </div>
@@ -39,5 +40,5 @@ export function NFMlmo (){
     )
 }
 
-// <p style = {{position:"relative", bottom:"20px"}}>{new Date(createdAt.toDate()).toString().slice(0,24)}</p> 
+
 
