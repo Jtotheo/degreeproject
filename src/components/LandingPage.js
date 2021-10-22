@@ -3,7 +3,7 @@ import {NavLinksIconsSTHLM} from './NavLinksIconsSTHLM'
 import { NavLinksIconsMLMO } from "./NavLinksIconsMLMO";
 import { NavLinksIconsGTBG } from "./NavLinksIconsGTBG";
 // import { SignIn } from "./SignIn";
-import logograd from './logograd.png';
+import logobeige from './logobeige.png';
 import Example from './Carousel';
 
 import { useState, useEffect } from "react";
@@ -29,7 +29,7 @@ export function LandingPage() {
     return (
         <>
         <div className="logodiv">
-            <img src={logograd} alt="Logo" width="130" />
+            <img src={logobeige} alt="Logo" width="130" />
             </div>
             {/* <h1>This is the amig@s homepage!</h1> */}
             {/* <SignOut /> */} 

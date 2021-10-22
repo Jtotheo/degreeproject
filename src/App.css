@@ -7,10 +7,22 @@
     
 }
 
+
+.msgcontainer {
+    max-width: 100%;
+    width: 100vw;
+}
+.subject {
+    margin: 10%;
+    
+}
+
 body {
     font-family: 'Jost', sans-serif;
     background-color: #BEB7F4;
     font-size: 12px;
+    max-width: 100%;
+    width: 100vW;
 }
 
 .logodiv {
@@ -164,6 +176,8 @@ ul {
     padding: 1rem;
     text-align: end;
     float: right;
+    max-width: 100%;
+    overflow: hidden;
 }
 .received {
     color: white;
@@ -172,11 +186,14 @@ ul {
     padding: 1rem;
     float: left;
     text-align: left;
+    max-width: 100%;
+    overflow: hidden;
+    
 }
 
 .sent p {
     text-align: left;
-    width: 100%;
+    max-width: 100%;
     padding-left: 1rem;
 }
 
