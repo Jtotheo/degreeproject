@@ -29,7 +29,7 @@ export function LandingPage() {
     return (
         <>
         <div className="logodiv">
-            <img src={logograd} alt="Logo" width="125" />
+            <img src={logograd} alt="Logo" width="130" />
             </div>
             {/* <h1>This is the amig@s homepage!</h1> */}
             {/* <SignOut /> */} 
@@ -38,16 +38,18 @@ export function LandingPage() {
 
             <div className= "dropdown">
             <p>Vilken stad vill du se aktiviteter för?</p>
-                <select name="cities" id="citySelect"
+                <select className="select" name="cities" id="citySelect"
                 onChange= {(e) => {
                     const selectedCity = e.target.value;
                     setCity(selectedCity);
                     console.log(city)
                 }}>
-                <option disabled selected value> Välj en stad! </option>
-                <option value="stockholm">Stockholm</option>
-                <option value="malmo">Malmö</option>
-                <option value="goteborg">Göteborg</option>
+                
+                <option className="option" disabled selected value> Välj en stad! </option>
+                <option className="option" value="stockholm">Stockholm</option>
+                <option className="option" value="malmo">Malmö</option>
+                <option className="option" value="goteborg">Göteborg</option>
+                
                 </select>
             </div>
             
