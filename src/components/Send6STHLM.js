@@ -8,7 +8,7 @@ function postMoment() {
     const date = new Date().toLocaleDateString('sv-SE',options);
     const time = new Date().toLocaleTimeString();
     const dateAndTime = `${date} ${time}`;
-    const formatedDateAndTime = dateAndTime.charAt(0).toUpperCase() + dateAndTime.slice(1);
+    const formatedDateAndTime = dateAndTime.charAt(0).toUpperCase() + dateAndTime.slice(1, 3) + " " + dateAndTime.slice(7, 10) + dateAndTime.slice(10, 13) + " " + dateAndTime.slice(18);
     return formatedDateAndTime
 }
 
