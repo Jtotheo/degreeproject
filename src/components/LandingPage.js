@@ -29,7 +29,7 @@ export function LandingPage() {
     return (
         <>
         <div className="logodiv">
-            <img src={logograd} alt="Logo" width="125" />
+            <img src={logograd} alt="Logo" width="130" />
             </div>
             {/* <h1>This is the amig@s homepage!</h1> */}
             {/* <SignOut /> */} 

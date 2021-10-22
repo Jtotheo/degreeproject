@@ -45,34 +45,63 @@ h1 {
     font-weight: 600;
 }
 
-h2 {
+.textonimg h2 {
     text-align: center;
     font-weight: 600;
     padding-top: 3%;
     font-size: 20px;
     margin: 2%;
-    color: rgb(103, 110, 116);
+    color: #F5F3E3;
     z-index: 2;
 }
 
-p {
+.textonimg p {
     font-size: 16px;
     font-weight: 600;
     text-align: center;
     padding-bottom: 3%;
     margin: 2%;
-    color: rgb(103, 110, 116);
+    color: #F5F3E3;
+}
+
+.textonimg a {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 3%;
+    margin: 2%;
+    margin-top: 8%;
+    color: #F5F3E3;
+    text-decoration: underline;
+    
+}
+
+p {
+    font-size: 16px;
 }
 
 .paperstyle {
     padding: 1.2rem;
     box-sizing: border-box;
-    margin-top: 8%;
+    margin-top: 3%;
+    padding-bottom:0;
+    position: relative;
+   
+}
+
+.textonimg {
+    margin:10%;
+    position: absolute;
+    display:flex;
+    align-content:center;
+    flex-direction: column
 }
 
 img {
     border-radius: 7px;
+   
 }
+
 
 /* nav {
     position: sticky;
