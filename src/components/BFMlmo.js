@@ -17,7 +17,7 @@ export function BFMlmo (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsMLMO />
-            <h1 className="subject">Malmö | barn & familj</h1>
+            <h2 className="subject">MALMÖ | BARN & FAMILJ</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

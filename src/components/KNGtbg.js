@@ -17,7 +17,7 @@ export function KNGtbg (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsGTBG />
-            <h1 className="subject">Göteborg | kultur & nöje</h1>
+            <h2 className="subject">GÖTEBORG | KULTUR & NÖJE</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

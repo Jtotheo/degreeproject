@@ -17,7 +17,7 @@ export function MDGtbg (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsGTBG />
-            <h1 className="subject">Göteborg | mat & dryck</h1>
+            <h2 className="subject">GÖTEBORG | MAT & DRYCK</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

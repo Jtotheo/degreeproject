@@ -17,7 +17,7 @@ export function MDMlmo (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsMLMO />
-            <h1 className="subject">Malmö | mat och dryck</h1>
+            <h2 className="subject">MALMÖ | MAT & DRYCK</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

@@ -17,7 +17,7 @@ export function THMlmo (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsMLMO />
-            <h1 className="subject">Malmö | träning och hälsa</h1>
+            <h2 className="subject">MALMÖ | TRÄNING & HÄLSA</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

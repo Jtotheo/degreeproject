@@ -17,7 +17,7 @@ export function THGtbg (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsGTBG />
-            <h1 className="subject">Göteborg | träning och hälsa</h1>
+            <h2 className="subject">GÖTEBORG | TRÄNING & HÄLSA</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     
