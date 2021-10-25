@@ -75,7 +75,7 @@ function Item(props)
         <div className="paperstyle" >
         <Paper
         elevation={100}
-        style={{borderRadius: "50%", backgroundColor:"rgba(255,255,255,0)"}}
+        style={{borderRadius: "10%", backgroundColor:"rgba(255,255,255, 0)"}}
 
         >
 
