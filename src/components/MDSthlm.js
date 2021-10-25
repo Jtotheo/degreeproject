@@ -17,7 +17,9 @@ export function MDSthlm (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsSTHLM />
+            <div className="headerstyle">
             <h2 className="subject">STOCKHOLM | MAT & DRYCK</h2>
+            </div>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

@@ -17,7 +17,9 @@ export function THSthlm (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsSTHLM />
+            <div className="headerstyle">
             <h2 className="subject">STOCKHOLM | TRÄNING & HÄLSA</h2>
+            </div>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

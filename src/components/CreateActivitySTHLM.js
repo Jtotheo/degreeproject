@@ -22,7 +22,7 @@ export function CreateActivitySTHLM() {
         <>
         <div className="dropdown">
         <h2 className="subject">Välj aktivitetskategori</h2>
-            <FormControl className="dropdownmenu" variant="standard" style={{ fontFamily: `'Jost', sans-serif`, color: "rgba(140, 85, 255, 0)"}} sx={{minWidth: 120 }}>
+            <FormControl className="dropdownmenu" variant="standard" style={{ fontFamily: `'Jost', sans-serif`, backgroundColor: "#eeebd0", borderRadius:"7px", color: "rgba(140, 85, 255, 0)"}} sx={{minWidth: 120 }}>
                 <InputLabel>Kategori</InputLabel>
                 <Select
                 id="category"

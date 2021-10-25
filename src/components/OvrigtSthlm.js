@@ -17,7 +17,9 @@ export function OvrigtSthlm (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsSTHLM />
+            <div className="headerstyle">
             <h2 className="subject-extra">STOCKHOLM | ÖVRIGA AKTIVITETER</h2>
+            </div>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

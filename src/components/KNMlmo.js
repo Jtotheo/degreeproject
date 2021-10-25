@@ -17,7 +17,9 @@ export function KNMlmo (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsMLMO />
+            <div className="headerstyle">
             <h2 className="subject">MALMÖ | KULTUR & NÖJE</h2>
+            </div>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     
