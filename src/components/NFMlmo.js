@@ -17,7 +17,7 @@ export function NFMlmo (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsMLMO />
-            <h1 className="subject">Malmö | natur och friluftsliv</h1>
+            <h2 className="subject">MALMÖ | NATUR & FRILUFTSLIV</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

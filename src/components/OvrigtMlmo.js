@@ -17,7 +17,7 @@ export function OvrigtMlmo (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsMLMO />
-            <h1 className="subject">Malmö | övriga aktiviteter</h1>
+            <h2 className="subject">MALMÖ | ÖVRIGA AKTIVITETER</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

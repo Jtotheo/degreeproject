@@ -17,7 +17,7 @@ export function BFGtbg (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsGTBG />
-            <h1 className="subject">Göteborg | barn & familj</h1>
+            <h2 className="subject">GÖTEBORG | BARN & FAMILJ</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

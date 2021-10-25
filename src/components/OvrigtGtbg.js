@@ -17,7 +17,7 @@ export function OvrigtGtbg (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsGTBG />
-            <h1 className="subject">Göteborg | övriga aktiviteter</h1>
+            <h2 className="subject-extra">GÖTEBORG | ÖVRIGA AKTIVITETER</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

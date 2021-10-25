@@ -17,7 +17,7 @@ export function NFGtbg (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsGTBG />
-            <h1 className="subject">Göteborg | natur och fritid</h1>
+            <h2 className="subject-extra">GÖTEBORG | NATUR & FRILUFTSLIV</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     

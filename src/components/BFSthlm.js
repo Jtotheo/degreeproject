@@ -17,7 +17,7 @@ export function BFSthlm (){
     return(
         <div className="msgcontainer">
             <NavLinksIconsSTHLM />
-            <h1 className="subject">Stockholm | barn & familj</h1>
+            <h2 className="subject">STOCKHOLM | BARN & FAMILJ</h2>
             <div className="msgs">
                 {messages.map(({id, text, photoURL, date, uid}) => (
                     
