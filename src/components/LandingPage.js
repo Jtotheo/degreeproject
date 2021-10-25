@@ -3,7 +3,7 @@ import {NavLinksIconsSTHLM} from './NavLinksIconsSTHLM'
 import { NavLinksIconsMLMO } from "./NavLinksIconsMLMO";
 import { NavLinksIconsGTBG } from "./NavLinksIconsGTBG";
 // import { SignIn } from "./SignIn";
-import logobeige from './logobeige.png';
+import logobeigegrad from './logobeigegrad.png';
 import Example from './Carousel';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -39,7 +39,7 @@ export function LandingPage() {
         <>
         {/* <ThemeProvider theme={theme}> */}
         <div className="logodiv">
-            <img src={logobeige} alt="Logo" width="130" />
+            <img src={logobeigegrad} alt="Logo" width="130" />
             </div>
             {/* <h1>This is the amig@s homepage!</h1> */}
             {/* <SignOut /> */} 
@@ -64,7 +64,6 @@ export function LandingPage() {
             {/* </ThemeProvider> */}
             
             {checkCity(city)}
-
         </>
     )
 
