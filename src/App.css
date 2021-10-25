@@ -19,7 +19,7 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #BEB7F4;
+    background-color: #8c55ff;
     font-size: 12px;
     max-width: 100%;
     width: 100vW;
@@ -38,7 +38,7 @@ button {
     border: none;
     box-shadow: 2px 2px 2px darkgray;
     margin: 10px;
-    background: #8c55ff;
+    background: #9766ff;
     font-family: 'Jost', sans-serif;
     color: white;
 }
@@ -92,7 +92,8 @@ h1 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
+    color: #eeebd0;
 }
 
 .paperstyle {
@@ -122,14 +123,16 @@ ul {
     max-width: 100%;
     margin: 0;
     padding: 0;
+    height: 10%;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     z-index: 100;
-    background-color: #BEB7F4;
-    border-top:1px solid #8c55ff;
+    background-color: #ea6866;
+    
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100vw;
 }
 
