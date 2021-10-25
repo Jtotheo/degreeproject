@@ -48,7 +48,7 @@ export function LandingPage() {
             <div className="dropdown">
             <p>Vilken stad vill du se aktiviteter för?</p>
             <FormControl className="dropdownmenu" variant="standard" style={{ fontFamily: `'Jost', sans-serif`, color: "rgba(140, 85, 255, 0)"}} sx={{minWidth: 80 }}>
-                <InputLabel>Stad</InputLabel>
+                <InputLabel>Välj</InputLabel>
                 <Select
                 id="select"
                 value={city}
