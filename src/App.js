@@ -31,23 +31,26 @@ import { Settings } from './components/Settings'
 import { CategoryGridSTHLM } from './components/CategoryGridSTHLM'
 import { CategoryGridGTBG } from './components/CategoryGridGTBG'
 import { CategoryGridMLMO } from './components/CategoryGridMLMO'
+import { CreateActivityGTBG } from './components/CreateActivityGTBG'
+import { CreateActivityMLMO } from './components/CreateActivityMLMO'
+import { CreateActivitySTHLM } from './components/CreateActivitySTHLM'
+
 
 function App() {
   const [user]=useAuthState(auth);
   return (
     <>
   
-   
     <Router>
-      
-      
 
       <Route exact path="/home" component= {user ? LandingPage : About} />
       <Route exact path="/" component= {user ? LandingPage : About} />
       <Route exact path="/settings" component= {user ? Settings : About} />
 
-   
-      
+      <Route exact path="/create/sthlm" component={user ? CreateActivitySTHLM : About} />
+      <Route exact path="/create/gtbg" component={user ? CreateActivityGTBG : About} />
+      <Route exact path="/create/mlmo" component={user ? CreateActivityMLMO : About} />
+
       <Route exact path="/categories/sthlm" component= {user ? CategoryGridSTHLM : About} />
       <Route exact path="/categories/sthlm/akt" component= {user ? THSthlm : About} />
       <Route exact path="/categories/sthlm/akt1" component= {user ? NFSthlm : About} />
@@ -71,8 +74,6 @@ function App() {
       <Route exact path="/categories/mlmo/akt3" component= {user ? BFMlmo : About} />
       <Route exact path="/categories/mlmo/akt4" component= {user ? KNMlmo : About} />
       <Route exact path="/categories/mlmo/akt5" component= {user ? OvrigtMlmo : About} />
-
-
 
       <div className="content">
         

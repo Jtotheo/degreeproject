@@ -25,7 +25,7 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #BEB7F4;
+    background-color: #8c55ff;
     font-size: 12px;
     max-width: 100%;
     width: 100vW;
@@ -44,7 +44,7 @@ button {
     border: none;
     box-shadow: 2px 2px 2px darkgray;
     margin: 10px;
-    background: #8c55ff;
+    background: #9766ff;
     font-family: 'Jost', sans-serif;
     color: white;
 }
@@ -98,7 +98,8 @@ h1 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
+    color: #eeebd0;
 }
 
 .paperstyle {
@@ -123,26 +124,21 @@ img {
    
 }
 
-
-/* nav {
-    position: sticky;
-    bottom: 0;
-
-} */
-
 ul {
     list-style: none;
     max-width: 100%;
     margin: 0;
     padding: 0;
+    height: 10%;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     z-index: 100;
-    background-color: #BEB7F4;
-    border-top:1px solid #8c55ff;
+    background-color: #ea6866;
+    
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100vw;
 }
 
@@ -227,14 +223,32 @@ input {
     position: fixed;
     bottom: 0; */
 }
+textarea {
+    border-radius: 7px;
+    border-style: none;
+    padding: 0.8rem;
+    width: 80%;
+    height: 40%;
+    margin: 1rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.createwrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
 
 .category-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .category-card {
@@ -263,47 +277,7 @@ input {
     font-family: 'Jost', sans-serif;
     color: #8c55ff;
 }
-/*.select {
-    position: relative;
-    border-style: none;
-    box-shadow: 2px 2px 2px #56a3a6;
-    font-family: 'Jost', sans-serif;
-    background-color: transparent;
-    cursor: pointer;
-    width: 35%;
-} */
-/* select:focus-within { 
-    position: relative;
-    top: 1px;
-    left: 1px;
-    right: 1px;
-
-    border-radius: 7px;
-    border-style: none;
-    box-shadow: 2px 2px 2px #56a3a6;
-    max-width: 20px;
-}   */
-/* .option {
-    position: absolute;
-    top: 1px; 
-    left: 1px;
-    right: 1px; 
-    background-color: #BEB7F4;
-    font-size: 10px;
-    width: 10px;
-    text-decoration: none;
-}
-.option:focus-within {
-    text-decoration: none;
-    border-radius: 7px;
-    border-style: none;
-    box-shadow: 2px 2px 2px #56a3a6;
-    max-width: 20px;
-}  */
-
 /*END dropdown-styling*/
-
-
 
 
 .settingswrapper {
