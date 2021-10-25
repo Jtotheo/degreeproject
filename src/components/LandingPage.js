@@ -64,7 +64,6 @@ export function LandingPage() {
             {/* </ThemeProvider> */}
             
             {checkCity(city)}
-
         </>
     )
 
