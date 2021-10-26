@@ -9,7 +9,6 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-// import { ThemeProvider, createTheme } from '@mui/system';
 import { useState, useEffect } from "react";
 
 function checkCity(test) {
@@ -22,11 +21,6 @@ function checkCity(test) {
     else return <NavLinksIconsSTHLM />
 }
 
-// const theme = createTheme({
-//     palette: {
-//     textcolor: '#8c55ff',
-//     }
-// });
 
 export function LandingPage() {
     const [city, setCity] = useState("")
@@ -37,17 +31,16 @@ export function LandingPage() {
 
     return (
         <>
-        {/* <ThemeProvider theme={theme}> */}
+        
         <div className="logodiv">
             <img src={logobeige} alt="Logo" width="130" />
             </div>
-            {/* <h1>This is the amig@s homepage!</h1> */}
-            {/* <SignOut /> */} 
+            
             <Example />
 
             <div className="dropdown">
             <p>Vilken stad vill du se aktiviteter för?</p>
-            <FormControl className="dropdownmenu" variant="standard" style={{ fontFamily: `'Jost', sans-serif`, color: "rgba(140, 85, 255, 0)"}} sx={{minWidth: 80 }}>
+            <FormControl className="dropdownmenu" variant="standard" sx={{minWidth: 80 }}>
                 <InputLabel>Välj</InputLabel>
                 <Select
                 id="select"
@@ -61,7 +54,6 @@ export function LandingPage() {
                 </Select>
             </FormControl>
             </div>
-            {/* </ThemeProvider> */}
             
             {checkCity(city)}
         </>
