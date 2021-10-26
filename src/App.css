@@ -293,6 +293,14 @@ textarea {
     font-family: 'Jost', sans-serif;
     color: #8c55ff;
 }
+select {
+    border-radius: 7px;
+    border-style: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    margin: 0.8rem;
+    background-color: #eeebd0;
+}
 /*END dropdown-styling*/
 
 
