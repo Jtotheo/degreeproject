@@ -2,7 +2,7 @@ import React from 'react';
 // import { SignOut } from './SignOut';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
-import { SendMessage } from './Send1STHLM';
+import { SendMessage } from './Send2STHLM';
 import { NavLinksIconsSTHLM } from './NavLinksIconsSTHLM';
 
 export function THSthlm (){
@@ -10,7 +10,7 @@ export function THSthlm (){
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
-        db.collection('AktivitetSthlm').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
+        db.collection('Aktivitet1Sthlm').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 

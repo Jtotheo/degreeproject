@@ -50,6 +50,9 @@ function App() {
       <Route exact path="/create/sthlm" component={user ? CreateActivitySTHLM : About} />
       <Route exact path="/create/gtbg" component={user ? CreateActivityGTBG : About} />
       <Route exact path="/create/mlmo" component={user ? CreateActivityMLMO : About} />
+      <Route exact path="/chat" component= {user ? THSthlm : About} />
+      <Route exact path="/chat1" component= {user ? THGtbg : About} />
+      <Route exact path="/chat2" component= {user ? THMlmo : About} />
 
       <Route exact path="/categories/sthlm" component= {user ? CategoryGridSTHLM : About} />
       <Route exact path="/categories/sthlm/akt" component= {user ? THSthlm : About} />

@@ -10,10 +10,10 @@ export function About(){
             <div className="logodiv">
             <img src={logobeige} alt="Logo" width="130" />
             </div>
-            <h2 style={{ marginTop:"5%"}}>Welcome to amig@s...</h2>
+            <h2 style={{textAlign: "center", color:"#F5F3E3", marginTop:"5%"}}>Välkommen till amig@s!</h2>
             <p style={{ marginBottom:"5%"}}>
-                Looking for a workout-buddy, a travel partner for a weekend or just a like-minded person for interesting conversations over a nice dinner? Join our community to meet with people for different activities.
-                Here at amig@s we encourage social interactions and our vision is to eliminate involuntary solitude. Join amig@s today without long registration procedures, and just get out there and find a friend to hang out with for just one single occation, our maybe a future friend for life! 
+            Letar du efter en träningskompis, en resepartner för en helg eller bara en likasinnad för intressanta samtal över en trevlig middag? Gå med i vår community för att träffa andra för olika aktiviteter.
+            Här på amig@s uppmuntrar vi sociala interaktioner och vår vision är att om man inte vill vara ensam, ska man inte behöva vara det! Gå med i amig@s idag utan en lång registreringsprocess, och kasta dig ut för att hitta en amig@, kanske en vän för livet!
             </p>
             <img src={about} alt="amigas" style={{height: "auto", width: "100%", margin: "auto"}} />
         </div>

@@ -33,8 +33,8 @@ export function SendMessage({scroll}) {
     return (
         <div className ="sendwrapper">
             <form onSubmit = {sendMessage}>
-                <input value={msg} onChange={(e)=> setMsg(e.target.value)} placeholder="Message here.." type="text" />
-                <button className="send" type= "submit">Send</button>
+                <input value={msg} onChange={(e)=> setMsg(e.target.value)} placeholder="Meddelande..." type="text" />
+                <button className="send" type= "submit">Skicka</button>
             </form>
         </div>
     )

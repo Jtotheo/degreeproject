@@ -2,7 +2,7 @@ import React from 'react';
 // import { SignOut } from './SignOut';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
-import { SendMessage } from './Send1MLMO';
+import { SendMessage } from './Send2MLMO';
 import { NavLinksIconsMLMO } from './NavLinksIconsMLMO';
 
 export function THMlmo (){
@@ -10,7 +10,7 @@ export function THMlmo (){
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
-        db.collection('AktivitetMlmo').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
+        db.collection('Aktivitet1Mlmo').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 

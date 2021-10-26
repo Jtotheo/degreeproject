@@ -9,8 +9,8 @@ function SignIn (){
 
     }
     return(
-        <div>
-            <button onClick={signInWithGoogle}>SignIn</button>
+        <div style={{width: "100%", textAlign: "center"}}>
+            <button onClick={signInWithGoogle}>Logga in</button>
 
         </div>
         

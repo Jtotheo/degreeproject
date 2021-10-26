@@ -44,7 +44,7 @@ export function CreateActivityMLMO() {
             <div className ="createwrapper">
             <form >
                 <textarea placeholder="Beskriv din aktivitet här!" type="text" rows="18" cols="35" />
-                <button className="send"  type= "submit">Send</button>
+                <button className="send"  type= "submit">Skicka</button>
             </form>
             </div>
             </>

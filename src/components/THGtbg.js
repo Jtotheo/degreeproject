@@ -2,7 +2,7 @@ import React from 'react';
 // import { SignOut } from './SignOut';
 import { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
-import { SendMessage } from './Send1GTBG';
+import { SendMessage } from './Send2GTBG';
 import { NavLinksIconsGTBG } from './NavLinksIconsGTBG';
 
 export function THGtbg (){
@@ -10,7 +10,7 @@ export function THGtbg (){
     const [messages, setMessages] = useState([]);
 
     useEffect(()=>{
-        db.collection('AktivitetGtbg').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
+        db.collection('Aktivitet1Gtbg').orderBy('createdAt').limit(20).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))})  
     },[]);
 
