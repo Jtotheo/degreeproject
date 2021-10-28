@@ -7,10 +7,6 @@ import { NavLinksIconsMLMO } from "./NavLinksIconsMLMO";
 export function CreateActivityMLMO() {
     const [category, setCategory] = useState("");
 
-    const handleChange = (e) => {
-        setCategory(e.target.value);
-    }
-
     return (
         <>
             <div className= "dropdown">

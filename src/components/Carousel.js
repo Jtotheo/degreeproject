@@ -8,8 +8,6 @@ import padel from './padel.jpg';
 import wine from './wine.jpg';
 import concert from './concert.jpg';
 
-
-
 function Example(props)
 {
     const items = [
@@ -37,8 +35,7 @@ function Example(props)
             description: "Gillar du vin men vet inte hur man ska tänka? Inte jag heller! Prova vin med mig?",
             image: wine,
             event: "Se event"
-        }
-              
+        } 
     ]
 
     return (
@@ -62,8 +59,6 @@ function Example(props)
                {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
-
-            
         </Carousel> 
     )
 }

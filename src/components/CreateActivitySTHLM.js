@@ -7,10 +7,6 @@ import { NavLinksIconsSTHLM } from './NavLinksIconsSTHLM';
 export function CreateActivitySTHLM() {
     const [category, setCategory] = useState("");
 
-    const handleChange = (e) => {
-        setCategory(e.target.value);
-    }
-
     return (
         <>
             <div className= "dropdown">

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Router, Link} from 'react-router-dom';
 import { NavLinksIconsGTBG } from './NavLinksIconsGTBG';
-import logo from './logo.png'
 import logobeige from './logobeige.png'
 
 
@@ -12,9 +11,6 @@ const listStyle = {
     padding: "16px",
     textDecoration: "none",
     fontSize:"14px",
-    
-    
-    
 }
 
 

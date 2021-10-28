@@ -7,10 +7,6 @@ import { NavLinksIconsGTBG } from "./NavLinksIconsGTBG";
 export function CreateActivityGTBG() {
     const [category, setCategory] = useState("");
 
-    const handleChange = (e) => {
-        setCategory(e.target.value);
-    }
-
     return (
         <>
             <div className= "dropdown">

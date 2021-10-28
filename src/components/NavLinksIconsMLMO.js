@@ -1,8 +1,6 @@
 import React from 'react';
 import {Router, Link} from 'react-router-dom';
 
-
-
 const listStyle = {
     display: "block",
     color: "white",

@@ -2,7 +2,6 @@ import React from "react";
 import {NavLinksIconsSTHLM} from './NavLinksIconsSTHLM'
 import { NavLinksIconsMLMO } from "./NavLinksIconsMLMO";
 import { NavLinksIconsGTBG } from "./NavLinksIconsGTBG";
-// import { SignIn } from "./SignIn";
 import logobeige from './logobeige.png';
 import Example from './Carousel';
 import InputLabel from '@mui/material/InputLabel';
@@ -31,7 +30,6 @@ export function LandingPage() {
 
     return (
         <>
-        
         <div className="logodiv">
             <img src={logobeige} alt="Logo" width="130" />
             </div>
@@ -58,6 +56,5 @@ export function LandingPage() {
             {checkCity(city)}
         </>
     )
-
 }
 

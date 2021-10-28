@@ -1,4 +1,3 @@
-import { width } from '@mui/system';
 import React from 'react';
 import about from './about.jpg'
 import logobeige from './logobeige.png'
