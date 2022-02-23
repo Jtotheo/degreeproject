@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/degreeproject/static/css/main.51007e88.chunk.css",
+    "main.js": "/degreeproject/static/js/main.5f756af8.chunk.js",
+    "main.js.map": "/degreeproject/static/js/main.5f756af8.chunk.js.map",
+    "runtime-main.js": "/degreeproject/static/js/runtime-main.e44a31c5.js",
+    "runtime-main.js.map": "/degreeproject/static/js/runtime-main.e44a31c5.js.map",
+    "static/js/2.26d4de0d.chunk.js": "/degreeproject/static/js/2.26d4de0d.chunk.js",
+    "static/js/2.26d4de0d.chunk.js.map": "/degreeproject/static/js/2.26d4de0d.chunk.js.map",
+    "index.html": "/degreeproject/index.html",
+    "static/css/main.51007e88.chunk.css.map": "/degreeproject/static/css/main.51007e88.chunk.css.map",
+    "static/js/2.26d4de0d.chunk.js.LICENSE.txt": "/degreeproject/static/js/2.26d4de0d.chunk.js.LICENSE.txt",
+    "static/media/about.9ff79339.jpg": "/degreeproject/static/media/about.9ff79339.jpg",
+    "static/media/climbing.947022a9.jpg": "/degreeproject/static/media/climbing.947022a9.jpg",
+    "static/media/concert.c883a10e.jpg": "/degreeproject/static/media/concert.c883a10e.jpg",
+    "static/media/logobeige.9d480711.png": "/degreeproject/static/media/logobeige.9d480711.png",
+    "static/media/padel.34de6cfa.jpg": "/degreeproject/static/media/padel.34de6cfa.jpg",
+    "static/media/wine.8d2d3261.jpg": "/degreeproject/static/media/wine.8d2d3261.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e44a31c5.js",
+    "static/js/2.26d4de0d.chunk.js",
+    "static/css/main.51007e88.chunk.css",
+    "static/js/main.5f756af8.chunk.js"
+  ]
+}
